@@ -37,11 +37,13 @@ which is written in Scala 3, and includes all the Scala 3 binaries. It will repl
 script with a full executable, and run the first build, which will clone some other source
 repositories in the process.
 
-You can always run Irk by calling `./irk`, but it may be convenient to copy the `irk` executable to
-`/usr/local/bin` or somewhere else on your path, so that it can be run from anywhere. It's
-entirely self-contained, so you just need to move one file.
+You can always run Irk by calling `./irk`, but it may be convenient to copy the `irk` executable
+onto your PATH environment variable, so that it can be run from anywhere, for example:
+```sh
+sudo cp irk /usr/local/bin/irk
+```
 
-### Continuous development
+### Continuous compilation
 
 Running `irk -w` will watch for changes to source directories, and automatically recompile if they
 change. It will even recompile if the build file, `build.irk` changes.
