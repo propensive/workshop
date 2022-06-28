@@ -1,0 +1,29 @@
+{
+  "repos": [
+    { "base": "../jovian",
+      "url": "https://github.com/propensive/jovian" },
+    { "base": "../turbulence",
+      "url": "https://github.com/propensive/turbulence" },
+    { "base": "../gastronomy",
+      "url": "https://github.com/propensive/gastronomy" },
+    { "base": "../probably",
+      "url": "https://github.com/propensive/probably" },
+    { "base": "../scintillate",
+      "url": "https://github.com/propensive/scintillate" }
+  ],
+  "imports": ["../jovian/build.irk", "../turbulence/build.irk", "../gastronomy/build.irk", "../probably/build.irk", "../scintillate/build.irk" ],
+  "modules": [
+    {
+      "name": "Scala 3 Workshop",
+      "id": "scala3/workshop",
+      "links": ["scintillate/server"],
+      "dependencies": [],
+      "jars": [],
+      "sources": ["src"],
+      "version": "1.0.0",
+      "docs": [],
+      "main": "example.hello",
+      "exec": { "browsers": [], "start": "example.hello" }
+    }
+  ]
+}
