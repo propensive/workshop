@@ -46,6 +46,11 @@ entirely self-contained, so you just need to move one file.
 Running `irk -w` will watch for changes to source directories, and automatically recompile if they
 change. It will even recompile if the build file, `build.irk` changes.
 
+### Known issue
+
+On Mac OS X, after every time you run `irk`, an `Interrupted system call` message is reported. This
+looks like a bug in the script, and seems to be innocuous. It does not seem to occur on Linux.
+
 ## Cleaning up
 
 The build tool is experimental, and is certainly not bug-free. If anything goes wrong, follow these
